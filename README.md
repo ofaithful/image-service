@@ -6,4 +6,4 @@
 ```
 
 #### UI
-Available at `http://localhost:3000/`
+Available at http://localhost:3000/
