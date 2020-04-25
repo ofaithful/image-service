@@ -1,0 +1,16 @@
+version: '3'
+services:
+  app:
+    build: ./image-service-app
+    container_name: image-service-app
+    ports:
+      - 8000:8000
+
+  app-ui:
+    build: ./image-service-ui
+    container_name: image-service-ui
+    links:
+      - app
+    ports:
+      - 3000:3000
+    stdin_open: true
